@@ -39,3 +39,5 @@ Done. All the data will be stored in the `output` folder. All you need to do is 
 ## TODO
 
 Add support for music and GIFs. They're probably also encoded like this, but I'm not sure and I haven't checked.
+
+[Make downloaded Tapas chapters readable](TAPAS.md)
