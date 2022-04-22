@@ -8,4 +8,4 @@ The JPEGs are stored at `/data/data/com.tapastic/files/contents_v2/seriesId/chap
 
 Luckily, the SQLITE database at `/data/data/com.tapastic/databases/tapas_room.db` has every file ordered in a table called `download_episode`. In order to rename these to their correct filename (1.jpg, 2.jpg etc...) we simply need to read a `fileUrl` field, and match the files. For every match we get in one chapter, we rename the file to a counter that goes up.
 
-Unfortunately, the chapters aren't separated by rows. But since it provides a full path, all we need to do is rename the beginning to a specified folder, and everything should work.
+The chapters are separated by rows, but the Sqlite database needs to be saved completely first (or else it will be in memory and not saved.) You might need to close the app, redownload chapters, or open them before getting the database. Sometimes it gets saved, sometimes it doesn't.
